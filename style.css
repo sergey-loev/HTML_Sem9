@@ -1,0 +1,258 @@
+ @keyframes flicker-in-1 {
+     0% {
+         opacity: 0;
+     }
+
+     10% {
+         opacity: 0;
+     }
+
+     10.1% {
+         opacity: 1;
+     }
+
+     10.2% {
+         opacity: 0;
+     }
+
+     20% {
+         opacity: 0;
+     }
+
+     20.1% {
+         opacity: 1;
+     }
+
+     20.6% {
+         opacity: 0;
+     }
+
+     30% {
+         opacity: 0;
+     }
+
+     30.1% {
+         opacity: 1;
+     }
+
+     30.5% {
+         opacity: 1;
+     }
+
+     30.6% {
+         opacity: 0;
+     }
+
+     45% {
+         opacity: 0;
+     }
+
+     45.1% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 1;
+     }
+
+     55% {
+         opacity: 1;
+     }
+
+     55.1% {
+         opacity: 0;
+     }
+
+     57% {
+         opacity: 0;
+     }
+
+     57.1% {
+         opacity: 1;
+     }
+
+     60% {
+         opacity: 1;
+     }
+
+     60.1% {
+         opacity: 0;
+     }
+
+     65% {
+         opacity: 0;
+     }
+
+     65.1% {
+         opacity: 1;
+     }
+
+     75% {
+         opacity: 1;
+     }
+
+     75.1% {
+         opacity: 0;
+     }
+
+     77% {
+         opacity: 0;
+     }
+
+     77.1% {
+         opacity: 1;
+     }
+
+     85% {
+         opacity: 1;
+     }
+
+     85.1% {
+         opacity: 0;
+     }
+
+     86% {
+         opacity: 0;
+     }
+
+     86.1% {
+         opacity: 1;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ .menu .menu__list .menu__link:hover {
+     color: red;
+ }
+
+ .menu .menu__list .menu__link:active {
+     color: green;
+ }
+
+ .menu .menu__list:first-child .menu__link {
+     text-decoration: none;
+ }
+
+ .menu .menu__list:last-child .menu__link {
+     font-weight: bold;
+ }
+
+ .menu .menu__list:nth-child(3) .menu__link {
+     background: orange;
+ }
+
+ .product {
+     margin-top: 100px;
+     position: relative;
+     width: 250px;
+     padding: 24px;
+     border: 1px solid #000;
+ }
+
+ .product__img {
+     background-color: forestgreen;
+     height: 150px;
+ }
+
+ .product::before {
+     content: "new";
+     width: 35px;
+     height: 35px;
+     color: white;
+     background: red;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+
+ .product::after {
+     content: "sale";
+     width: 35px;
+     height: 35px;
+     color: white;
+     background: orange;
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+
+ .picture {
+     margin-top: 100px;
+     margin-bottom: 100px;
+     width: 150px;
+     height: 150px;
+ }
+
+ .picture:hover path {
+     fill: purple;
+ }
+
+ .picture:active path {
+     fill: yellow;
+ }
+
+
+ .item_1 {
+     width: 150px;
+     height: 86px;
+     background-color: forestgreen;
+     border: 1px solid #000;
+     transition: transform 1s;
+     transition: linear 1s;
+ }
+
+ .item_1_1:hover {
+     margin-left: 50px;
+ }
+
+ .item_1_2:hover {
+     padding: 50px;
+ }
+
+ .item_1_3:hover {
+     transform: rotate(60deg);
+ }
+
+ .content_2 {
+     margin-top: 200px;
+     margin-left: 200px;
+     position: relative;
+ }
+
+ .item_2 {
+     position: absolute;
+     width: 150px;
+     height: 62px;
+     background-color: aqua;
+ }
+
+
+ .item_2_1 {
+     transform: rotate(90deg);
+ }
+
+ .item_2_2 {
+     transform: rotate(45deg);
+ }
+
+ .item_2_4 {
+     transform: rotate(-45deg);
+ }
+
+ .button {
+     width: 150px;
+     height: 50px;
+     margin-top: 500px;
+     margin-bottom: 500px;
+     background-color: purple;
+     color: white;
+     text-align: center;
+     line-height: 50px;
+     font-family: sans-serif;
+     font-size: 18px;
+     animation: flicker-in-1 2s linear both;
+     animation-iteration-count: infinite;
+ }
